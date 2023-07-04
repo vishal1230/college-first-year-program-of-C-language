@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int phy,chem,math,pps,evs;
+    float percentage,total;
+    printf("enter the marks phy out of 100 :");
+    scanf("%d",&phy);
+    printf("enter the marks chem out of 100 :");
+    scanf("%d",&chem);
+    printf("enter the marks math out of 100 :");
+    scanf("%d",&math);
+    printf("enter the marks pps out of 100 :");
+    scanf("%d",&pps);
+    printf("enter the marks evs out of 100 :");
+    scanf("%d",&evs);
+    total=phy+chem+math+pps+evs;
+    printf("total marks: %f \n",total);
+    percentage=(total*100)/500;
+    printf("percentage: %f ",percentage);
+    if(percentage>=90&&percentage<=100){
+        printf("the obtain grade is A");
+    }
+    else if(percentage>=80&&percentage<=90){
+        printf("the obtain grade is B");
+    }
+    if(percentage>=60&&percentage<=80){
+        printf("the obtain grade is C");
+    }
+    if(percentage<=60){
+        printf("the obtain grade is D");
+    }
+}
+
+output
+enter the marks math out of 100 :98
+enter the marks pps out of 100 :99
+enter the marks evs out of 100 :90
+total marks: 441.000000 
+percentage: 88.199997 the obtain grade is B
