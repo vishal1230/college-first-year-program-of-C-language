@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+  int a,b,temp;
+  printf("enter value of a and b :");
+  scanf("%d%d",&a,&b);
+  temp=a;
+  a=b;
+  b=temp;
+  printf("value of a and b after swaping: %d %d",a,b);
+}
+
+output
+enter value of a and b :4 5
+value of a and b after swaping: 5 4
