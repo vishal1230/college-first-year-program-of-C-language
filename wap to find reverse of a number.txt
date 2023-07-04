@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+int i,n,remaindr,reverse=0;
+printf("enter a number:");
+scanf("%d",&n);
+while(n>0){
+    remaindr=n%10;
+    reverse=reverse*10+remaindr;
+    n=n/10;
+}printf(" sum of digits entered are: %d",reverse);
+
+}
+
+
+output
+enter a number:45
+ sum of digits entered are: 54
