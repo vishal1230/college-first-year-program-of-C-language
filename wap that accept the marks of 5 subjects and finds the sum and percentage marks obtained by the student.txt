@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int phy,chem,math,pps,evs;
+    float percentage,total;
+    printf("enter the marks phy out of 100 :");
+    scanf("%d",&phy);
+    printf("enter the marks chem out of 100 :");
+    scanf("%d",&chem);
+    printf("enter the marks math out of 100 :");
+    scanf("%d",&math);
+    printf("enter the marks pps out of 100 :");
+    scanf("%d",&pps);
+    printf("enter the marks evs out of 100 :");
+    scanf("%d",&evs);
+    total=phy+chem+math+pps+evs;
+    printf("total marks: %f \n",total);
+    percentage=(total*100)/500;
+    printf("percentage: %f ",percentage);
+    return 0;
+}
+
+
+output
+enter the marks phy out of 100 :56
+enter the marks chem out of 100 :65
+enter the marks math out of 100 :78
+enter the marks pps out of 100 :99
+enter the marks evs out of 100 :90
+total marks: 388.000000 
+percentage: 77.599998 
