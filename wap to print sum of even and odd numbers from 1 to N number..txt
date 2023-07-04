@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+ int  i,n,sumof_even=0,sumof_odd=0;
+ printf("enter a number:");
+ scanf("%d",&n);
+ for(i=0;i<=n;i++){
+     if(i%2==0){
+         sumof_even+=i;
+     }
+     else{
+         sumof_odd+=i;
+     }
+ }
+  printf("sumof_even:%d\n",sumof_even);
+     printf("sumof_odd:%d",sumof_odd);
+}
+
+output
+enter a number:6
+sumof_even:12
+sumof_odd:9
